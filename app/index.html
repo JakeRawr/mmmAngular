@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Mean Median Mode</title>
+</head>
+<body>
+  <h1>Welcome!</h1>
+  <div data-ng-app="calApp">
+    <div data-ng-controller="mmmCtrl">
+      <form>
+        Input numbers to be calculated: (separate by spaces)<br>
+        <input type="text" data-ng-model="numbers">
+      </form>
+      <div>Inputs:
+        <p>{{numbers}}</p>
+      </div>
+      <div>Results
+        <p>{{results}}</p>
+      </div>
+    </div>
+  </div>
+  <script src="client_bundle.js"></script>
+</body>
+</html>
