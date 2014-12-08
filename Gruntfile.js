@@ -65,7 +65,8 @@ module.exports = function(grunt) {
   });
   grunt.registerTask('test', [
     'jshint',
-    'simplemocha'
+    'simplemocha',
+    'karma:unit'
   ]);
   grunt.registerTask('test:client', [
     'browserify:test',
