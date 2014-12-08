@@ -1,6 +1,6 @@
 'use strict';
 module.exports = function(app) {
-  app.controller('mmmCtrl', ['$scope','$http',function($scope, $http) {
+  app.controller('mmmCtrl', ['$scope', '$http', function($scope, $http) {
     $scope.calMMM = function() {
       var splitArray = $scope.numbers.split(' ').join();
       var numberArray = JSON.parse('[' + splitArray + ']');

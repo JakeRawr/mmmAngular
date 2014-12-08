@@ -8,4 +8,3 @@ module.exports = function(app) {
     res.send('mean: ' + mean + ' mode: ' + mode + ' median ' + median);
   });
 };
-
