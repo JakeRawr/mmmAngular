@@ -1,6 +1,5 @@
 'use strict';
 var mmm = require('../lib/mmm');
-
 module.exports = function(app) {
   app.post('/calMMM', function(req, res) {
     var mean = mmm.mean(req.body.list);
@@ -9,3 +8,4 @@ module.exports = function(app) {
     res.send('mean: ' + mean + ' mode: ' + mode + ' median ' + median);
   });
 };
+
